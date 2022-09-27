@@ -10,6 +10,49 @@ public class PrimeiroPrograma {
 
         Gato gato = new Gato();
         System.out.println(gato);
+        int numPaginas;
+        Livro livro1 = new Livro();
+        System.out.println(livro1);
+    }
+}
 
+class Livro {
+    private String none;
+    private Integer numPaginas;
+
+    public Livro(String none, Integer numPaginas) {
+        this.none = none;
+        this.numPaginas = numPaginas;
+    }
+
+    public Livro(int i) {
+    }
+
+    public Livro() {
+
+    }
+
+    public String getNone() {
+        return none;
+    }
+
+    public void setNone(String none) {
+        this.none = none;
+    }
+
+    public Integer getNumPaginas() {
+        return numPaginas;
+    }
+
+    public void setNumPaginas(Integer numPaginas) {
+        this.numPaginas = numPaginas;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "none='" + none + '\'' +
+                ", numPaginas=" + numPaginas +
+                '}';
     }
 }
